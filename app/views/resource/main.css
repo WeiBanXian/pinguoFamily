@@ -1,0 +1,425 @@
+body,
+html,
+.wrap {
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+    height: 100%;
+    font-family: 'LouisBold', 'Microsoft YaHei', sans-serif;
+    color: #000;
+    background-color: #f4bc00;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    z-index: 10;
+    width: 14.21%
+}
+.arrow{
+    position: absolute;
+    z-index: 9;
+    width: 14.21%;
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    bottom: 4%;
+    left: 49%;
+    border-left: 2px solid #f4bc00;
+    border-bottom: 2px solid #f4bc00;
+    -webkit-transform: rotate(-45deg);
+    -webkit-animation: arrow 0.8s infinite;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+    bottom: 4%;
+      }
+    50% { 
+    bottom: 5%;
+
+     }
+    100% { 
+    bottom: 4%;
+
+     }
+}
+
+
+.content {
+    position: relative;
+    height: 72%;
+}
+
+.section {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section1 {
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+}
+
+.section1 .title {
+position: absolute;
+    width: 84.53%;
+    top: 50%;
+    left: 8%;
+    -webkit-transform: translateY(-130%);
+}
+
+.section1 .stitle {
+    position: absolute;
+    width: 86.71%;
+    bottom: 12%;
+    left: 7%;
+}
+
+.section2 {
+    background-image: url(../images/bg2.jpg);
+}
+
+.fbi {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    width: 82.8%;
+    left: 8.6%;
+    -webkit-transform: translateY(-50%);
+    overflow: visible;
+}
+
+.fbi .swiper-wrapper {
+    margin: 0 auto;
+}
+
+.sbox-wrap {}
+
+.sbox {
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    ;
+}
+
+.td-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 28%;
+    width: 100%;
+    z-index: 10;
+    background-color: #f4bc00;
+    min-height: 116px;
+    box-shadow: 0 0 16px 1px rgba(0,0,0,0.4);
+}
+
+.td-box-wrap {
+    position: absolute;
+    width: 87.5%;
+    left: 6%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+}
+
+.td-box-wrap .ipbox {
+    overflow: hidden;
+}
+
+.td-box-wrap .pro-box {
+    margin: 3% 0;
+}
+
+.td-box-wrap .ipbox input {
+    width: 48%;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+    height: 34px;
+    border: none;
+    padding: 0 2%;
+    font-size: 14px;
+}
+
+.td-box-wrap .ipbox .mobile {
+    float: right;
+}
+
+.td-box-wrap .ipbox .realname {
+    float: left;
+}
+
+.td-box-wrap .label {
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.td-box-wrap .label>* {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.td-box-wrap .label p,
+.td-box-wrap .label a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #434343;
+}
+
+.td-box-wrap .label p {
+    margin: 0;
+    color: #fff;
+    margin: 0 6px;
+}
+
+.td-box-wrap .label .checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    position: relative;
+}
+
+.td-box-wrap .label .checkbox:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    left: 1px;
+    top: 1px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    -webkit-transform: rotate(-45deg);
+    display: none;
+}
+
+.td-box-wrap .label .pro {
+    display: none;
+}
+
+.td-box-wrap .label .pro:checked+.checkbox:after {
+    display: block;
+}
+
+.td-box-wrap .submit-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+
+/*预约试驾*/
+
+.selbox {
+    width: 94%;
+    height: 40px;
+    background-color: #434343;
+    padding-right: 40px;
+    border: 1px solid #a0a0a0;
+    position: relative;
+    line-height: 40px;
+}
+
+.selbox::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-left: 1px solid #f4bc00;
+    border-bottom: 1px solid #f4bc00;
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    line-height: 40px;
+}
+
+.selbox .seltxt {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #a0a0a0;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.selbox select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.spec {
+    padding-top: 4.6%;
+    font-size: 12px;
+}
+
+.spec .title {
+    width: 94%;
+    margin: 0 auto;
+    position: static;
+}
+
+.spec .title h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.spec .title p {
+    font-size: 18px;
+    padding-top: 1%;
+}
+
+.spec .car-type {
+    margin: 7.8% auto 0;
+}
+
+.spec .car-pic {
+    width: 86.4%;
+    margin: 5.4% auto 0;
+}
+
+.spec .spec-table-box {
+    margin-top: 3%;
+}
+
+.spec .spec-table-box td {
+    border-top: 1px solid #000;
+    height: 40px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.spec .spec-table-box tr td:nth-child(1) {
+    padding-left: 15px;
+}
+
+.spec .spec-table-box tr td:nth-child(2) {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.spec .spec-table-box .specacc td {
+    border-top: none;
+    border-bottom: 1px solid #000;
+}
+
+.specacc .sub-title {
+    font-size: 18px;
+    background: rgb(229, 229, 229);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(229, 229, 229, 1)), color-stop(100%, rgba(224, 224, 224, 1)), color-stop(100%, rgba(220, 220, 220, 1)));
+    background: -webkit-linear-gradient(top, rgba(229, 229, 229, 1) 0%, rgba(224, 224, 224, 1) 100%, rgba(220, 220, 220, 1) 100%);
+    background: linear-gradient(to bottom, rgba(229, 229, 229, 1) 0%, rgba(224, 224, 224, 1) 100%, rgba(220, 220, 220, 1) 100%);
+}
+
+.open .sub-title {
+    background-color: #333333;
+    color: #fff;
+}
+
+.specacc .sub-title span::before,
+.specacc .sub-title span::after {
+    height: 2px;
+    width: 16px;
+    top: 23px;
+    content: '';
+}
+
+.specacc .sub-title span::after {
+    width: 2px;
+    height: 16px;
+    right: 7px;
+    top: 17px;
+}
+
+.spec .accordion-con table tr:nth-child(1) {
+    display: none;
+}
+
+
+/*手风琴base*/
+
+.accordion-box .accordion-wrap {
+    overflow: hidden;
+    display: none;
+}
+
+.accordion-box .open .accordion-wrap {}
+
+.accordion-box .sub-title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    line-height: 50px;
+    color: #434343;
+    position: static;
+    /* -webkit-transition: all 1s;
+            transition: all 1s;*/
+}
+
+.accordion-box .open .sub-title {
+    color: #fff;
+    background: rgb(51, 51, 51);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 1)), color-stop(100%, rgba(51, 51, 51, 1)), color-stop(100%, rgba(220, 220, 220, 1)));
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 100%, rgba(220, 220, 220, 1) 100%);
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 100%, rgba(220, 220, 220, 1) 100%);
+    position: static;
+    left: 0;
+    top: 0;
+}
+
+.accordion-box .sub-title span {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.accordion-box .sub-title span::before,
+.accordion-box .sub-title span::after {
+    position: absolute;
+    right: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #f4bc00;
+    top: 24px;
+    content: '';
+}
+
+.accordion-box .sub-title span::after {
+    width: 1px;
+    height: 15px;
+    right: 7px;
+    top: 17px;
+}
+
+.accordion-box .open .sub-title span::after {
+    opacity: 0;
+}
+
+.accordion-box .open .accordion-wrap {
+    display: block;
+}
